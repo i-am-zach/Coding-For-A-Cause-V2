@@ -3,6 +3,24 @@ Built using [Wagtail](https://wagtail.io/)
 
 Contrbutors: Zach Lefkovitz
 
+## Getting started
+### Migrating the Database
+```
+python3 manage.py migrate
+```
+### Create a new Admin User
+```
+python3 manage.py createsuperuser
+```
+### Autopopulate the posts
+```
+python3 manage.py populate_posts
+```
+### Run the server
+```
+python3 manage.py runserver 0.0.0.0:80000
+```
+
 ## Todo
 * Style with CSS Framework
     * Possible options
