@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand, CommandError
 from wagtail.core.models import Page
 from home.models import HomePage
@@ -14,6 +15,7 @@ class Command(BaseCommand):
         amount = int(options.get('amount'))
         
         home = HomePage.objects.first()
+        author = get_user_model().objects.filter(is_superuser=True).first()
 
         try:
             posts_index_page = PostsIndexPage.objects.first()
@@ -34,7 +36,8 @@ class Command(BaseCommand):
             post = PostPage(
                 date=date.today(),
                 body=f"This is post number {1 + last_post_id}",
-                title=f"Post #{1 + last_post_id}"
+                title=f"Post #{1 + last_post_id}",
+                author=author
             )
             posts_index_page.add_child(instance=post)
             self.stdout.write(self.style.SUCCESS(f"Created new post {post.title}"))
