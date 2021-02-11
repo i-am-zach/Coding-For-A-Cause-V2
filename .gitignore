@@ -1,2 +1,6 @@
 *.sqlite3
 .devcontainer
+venv
+*/node_modules
+tailwind/yarn-error.log
+tailwind/yarn.lock

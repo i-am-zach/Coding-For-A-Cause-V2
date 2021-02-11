@@ -1,12 +1,40 @@
 {% extends "base.html" %}
-{% load static wagtailcore_tags wagtailuserbar %}
-
-{% block body_class %}template-homepage{% endblock %}
-
-{% block extra_css %}
-{% endblock extra_css %}
-
+{% load static wagtailcore_tags wagtailuserbar %} 
+{% block body_class %}template-homepage{% endblock %} 
 {% block content %}
-<h1>Welcome to Coding for a Cause!</h1>
-<h2><a href="{% slugurl 'posts' %}">View posts</a><h2>
+<section class="bg-blue-300 py-32">
+  <div class="container mx-auto px-8">
+    <div class="block md:flex gap-4">
+      <div class="flex-1">
+        <h1 class="text-4xl lg:text-6xl text-gray-900 font-bold">
+          Providing your business with professionally designed websites, for
+          free.
+        </h1>
+        <button class="btn bg-white text-gray-900 mt-8 lg:text-xl">
+          Contact us
+        </button>
+      </div>
+      <div class="flex-1 max-w-xl">
+        <img class="pt-10 md:pt-0" src="{% static 'your_company_here.png' %}" alt="Laptop" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-20">
+  <div class="container mx-auto">
+    <div class="block md:flex">
+      <div class="flex-1"></div>
+      <div class="flex-1 px-5">
+        <h1 class="text-4xl text-gray-800 font-semibold">Who we Are</h1>
+        <p class="pt-3">
+          Coding for a Cause was made to nurture the skills of Computer Science
+          at Deerfield High School while simulataneously giving back to our
+          communities by teaching through project-first learning.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% endblock content %}

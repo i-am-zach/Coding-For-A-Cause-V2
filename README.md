@@ -20,12 +20,23 @@ python3 manage.py populate_posts
 ```
 python3 manage.py runserver 0.0.0.0:80000
 ```
+### Modifying Tailwind
+The tailwind css file is located in `/tailwind/styles/styles.css`
+```
+cd tailwind
+```
+```
+yarn install
+```
+```
+yarn build
+```
 
 ## Todo
-* Style with CSS Framework
+* ~~Style with CSS Framework~~
     * Possible options
-        * Bootstrap
-        * Bulma
+        * ~~Bootstrap~~
+        * ~~Bulma~~
         * Tailwind
 * Create landing page
 * Create staff app
