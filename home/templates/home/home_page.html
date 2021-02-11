@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% load static wagtailcore_tags wagtailuserbar %} 
 {% block body_class %}template-homepage{% endblock %} 
+
 {% block content %}
-{% include 'navbar.html' %}
 <section class="bg-blue-300 py-32">
   <div class="container mx-auto px-8">
     <div class="block md:flex gap-4">
@@ -26,7 +26,7 @@
   <div class="container mx-auto">
     <div class="block md:flex">
       <div class="flex-1"></div>
-      <div class="flex-1 px-5">
+      <div class="flex-1">
         <h1 class="text-4xl text-gray-800 font-semibold">Who we Are</h1>
         <p class="pt-3">
           Coding for a Cause was made to nurture the skills of Computer Science

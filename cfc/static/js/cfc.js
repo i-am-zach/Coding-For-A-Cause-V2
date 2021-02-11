@@ -1,3 +1,4 @@
+// NAVBAR LOGIC
 let navOpen = false;
 
 const navMenu = document.getElementById('navMenu');
@@ -9,15 +10,19 @@ function toggleNavbar() {
     console.log("Toggle navbar!");
     if(navOpen) {
         // Close the navbar
-        navMenu.classList.add('hidden');
         navOpen = !navOpen;
+
+        navMenu.classList.add('hidden');
+        navMenu.classList.remove('flex');
 
         navOpenIcon.classList.remove('hidden');
         navCloseIcon.classList.add('hidden');
     } else {
         // Open the navbar
-        navMenu.classList.remove('hidden');
         navOpen = !navOpen;
+
+        navMenu.classList.remove('hidden');
+        navMenu.classList.add('flex');
 
         navOpenIcon.classList.add('hidden');
         navCloseIcon.classList.remove('hidden');
@@ -25,6 +30,3 @@ function toggleNavbar() {
 }
 
 navButton.onclick = (_) => toggleNavbar();
-
-console.log(navButton);
-console.log("CFC.js");
