@@ -11,7 +11,7 @@
 }
 
 .card {
-    @apply bg-white shadow-lg rounded-lg p-4 text-center border border-gray-200;
+    @apply shadow-lg rounded-lg p-4 text-center border border-gray-200;
 }
 
 .card-title {
