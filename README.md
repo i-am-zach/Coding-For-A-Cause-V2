@@ -24,7 +24,7 @@ python3 manage.py runserver 0.0.0.0:80000
 1. Go to localhost:8000/admin and login in with your admin user credentials
 2. Go to the home page and click `add child page`
 3. Create a new Contact Page
-4. Fill out the information to create the page make sure to title it **Contact Us**
+4. Fill out the information to create the page
     * For the form fields add:
         * Name (single-line)
         * email (email)
