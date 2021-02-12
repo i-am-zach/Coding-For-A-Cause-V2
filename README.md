@@ -20,7 +20,16 @@ python3 manage.py populate_posts
 ```
 python3 manage.py runserver 0.0.0.0:80000
 ```
-### Modifying Tailwind
+### Adding a contact form
+1. Go to localhost:8000/admin and login in with your admin user credentials
+2. Go to the home page and click `add child page`
+3. Create a new Contact Page
+4. Fill out the information to create the page make sure to title it **Contact Us**
+    * For the form fields add:
+        * Name (single-line)
+        * email (email)
+        * Comment (multi-line)
+### Modifying TailwindCSS
 The tailwind css file is located in `/tailwind/styles/styles.css`
 ```
 cd tailwind
