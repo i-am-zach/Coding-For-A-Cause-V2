@@ -9,6 +9,7 @@ export default function Home() {
       <Head>
         <title>Coding for a Cause</title>
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
       <section className="bg-blue-300 py-32">
         <div className="container mx-auto px-8">
