@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function FormField({ name, label, inputType }) {
   return (
     <div className="flex flex-col">
-      <label for={name} className="hidden">
+      <label htmlFor={name} className="hidden">
         {label}
       </label>
       <input

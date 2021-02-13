@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Card from '../components/Card';
 import Layout from '../components/Layout';
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
                 for free.
               </h1>
               <button className="btn bg-white text-gray-900 mt-8 lg:text-xl">
-                <a href="/">Contact Us</a>
+                <Link href="/contact"><a>Contact Us</a></Link>
               </button>
             </div>
             <div className="mt-12 md:mt-0 flex-1 max-w-xl">
