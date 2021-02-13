@@ -49,11 +49,11 @@ export default function Home() {
               subtitle="We work with local businesses and not-for-profits to help build them intuitively designed and responsive websites for free. Turning a business idea into a reality can be expensive, we want to help reduce the staggering costs of website fees."
             />
             <Card
-              title="Student Ran"
+              title="Student Run"
               subtitle="Our club is lead by High School students and taught for High School students. The club is a great opportunity for students who know a lot to pass on their skills and for apsiring developers to get free educational content."
             />
             <Card
-              title="Team Enviroment"
+              title="Team Environment"
               subtitle="We like to teach our lessons with a focus on teaching the appropraite technology for an upcoming project. Working in a team on a coding project nurtures good team and project management skills that are useful for any industry."
             />
             <Card
