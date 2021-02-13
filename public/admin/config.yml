@@ -8,7 +8,6 @@ collections:
     label: "Posts"
     folder: "content/posts"
     create: true
-    slug: "{{ slug }}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
