@@ -28,12 +28,13 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            <form className="grid grid-cols-1 gap-y-4 pr-8 mt-4 md:mt-0">
+            <form name="contact" data-netlify="true" data-netlify-repatcha="true" className="grid grid-cols-1 gap-y-4 pr-8 mt-4 md:mt-0">
+              <input type="hidden" name="form-name" value="contact" />
               <FormInput label="Full Name" name="name" inputType="text" />
               <FormInput label="Email" name="email" inputType="email" />
               <FormInput label="Company" name="company" inputType="text" />
               <FormTextArea label="Message" name="message" />
-              <button className="rounded-lg px-2 py-3 bg-blue-500 font-bold text-white hover:bg-blue-600">Submit</button>
+              <button type="submit" className="rounded-lg px-2 py-3 bg-blue-500 font-bold text-white hover:bg-blue-600">Submit</button>
             </form>
           </div>
         </div>
