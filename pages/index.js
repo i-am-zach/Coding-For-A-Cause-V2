@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Card from '../components/Card';
-import Layout from "../components/Layout";
+import Layout from '../components/Layout';
 
 export default function Home() {
   return (
@@ -21,17 +21,17 @@ export default function Home() {
                 <a href="/">Contact Us</a>
               </button>
             </div>
-            <div className="flex-1 max-w-xl">
+            <div className="mt-12 md:mt-0 flex-1 max-w-xl">
               <img src="/your_company_here.png" alt="Laptop" />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="pt-12 pb-8">
+      <section className="pt-12 pb-8 px-6 md:px-0">
         <div className="container mx-auto max-w-screen-xl">
           <div className="text-center">
-            <h1 className="text-5xl font-bold">Who We Are</h1>
+            <h1 className="text-5xl font-bold" id="#about-us">Who We Are</h1>
             <p className="pt-4 text-xl text-gray-700">
               Coding for a Cause was started to develop students' skills and
               teach the marketable technology in the world of Computer Science
@@ -41,7 +41,8 @@ export default function Home() {
               frameworks, HTTP protocols, and modern web paradigms.
             </p>
           </div>
-          <div className="pt-16 grid grid-cols-2 gap-x-4 gap-y-8">
+          {/* CARDS SECTION */}
+          <div className="pt-16 grid md:grid-cols-2 gap-x-4 gap-y-8">
             <Card
               title="Giving Back"
               subtitle="We work with local businesses and not-for-profits to help build them intuitively designed and responsive websites for free. Turning a business idea into a reality can be expensive, we want to help reduce the staggering costs of website fees."
