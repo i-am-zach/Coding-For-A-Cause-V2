@@ -1,71 +1,34 @@
-# Coding for a Cause
-Built using [Wagtail](https://wagtail.io/)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Contrbutors: Zach Lefkovitz
+## Getting Started
 
-## Getting started
-### Migrating the Database
-```
-python3 manage.py migrate
-```
-### Create a new Admin User
-```
-python3 manage.py createsuperuser
-```
-### Autopopulate the posts
-```
-python3 manage.py populate_posts
-```
-### Run the server
-```
-python3 manage.py runserver 0.0.0.0:80000
-```
-### Adding a contact form
-1. Go to localhost:8000/admin and login in with your admin user credentials
-2. Go to the home page and click `add child page`
-3. Create a new Contact Page
-4. Fill out the information to create the page
-    * For the form fields add:
-        * Name (single-line)
-        * email (email)
-        * Comment (multi-line)
-### Modifying TailwindCSS
-The tailwind css file is located in `/tailwind/styles/styles.css`
-```
-cd tailwind
-```
-```
-yarn install
-```
-```
-yarn build
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-## Todo
-* ~~Style with CSS Framework~~
-    * Possible options
-        * ~~Bootstrap~~
-        * ~~Bulma~~
-        * Tailwind
-* Create landing page
-* Create staff app
-    * Profile index page with profiles in a gallery
-    * Profile section for each member
-    * Each profile can be its own page
-    * Profile model:
-        * Name
-        * Profile Picture
-        * Biography
-        * Socials (github, linkedin, twitter...)
-            * Should proably be its own model
-        * Linked projects
-* Create projects app
-    * Project index page with projects in a gallery
-    * Page and writeup for each individual project
-    * Project Model:
-        * Title
-        * Description
-        * Picture gallery
-            * Should be its own model similiar to the BlogPageGalleryImage in the [wagtail tutorial](https://docs.wagtail.io/en/stable/getting_started/tutorial.html)
-        * Writeup
-        * Developers (list of user models)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
