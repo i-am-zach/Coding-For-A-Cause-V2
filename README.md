@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/efac8f9f-6e6c-42d0-8a7a-f77452736e01/deploy-status)](https://app.netlify.com/sites/romantic-ritchie-553912/deploys)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -19,11 +21,10 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Contributing Guide
-### Adding Posts
+### Adding Posts to `/lessons`
 Posts are written in markdown and are found in the `content` directory
 
 [For help on writing Markdown](https://www.markdownguide.org/basic-syntax)
-
 #### Frontmatter for Lessons
 * title: (string)
     * The article's title displayed in SEO and on the page
@@ -35,6 +36,21 @@ Posts are written in markdown and are found in the `content` directory
     * The url to the lesson's YouTube video
 * emoji: (string)
     * A single emoji that represents the theme of the lesson
+
+### Adding Members to `/about-us`
+Members are also stored in markdown so their biography can be written in markdown.
+
+For an example, see `content/members/zach-lefkovitz.md`
+#### Frontmatter for Members
+* full_name: (string)
+    * The member's full name
+* *optional* title: (string)
+    * The member's title in the club ex: Leader
+* profile_picture: (string)
+    * The path to the member's profile picture
+    * To learn about Next.js static file serving, [visit this page](https://nextjs.org/docs/basic-features/static-file-serving)
+* class: ("Senior" | "Junior" | "Sophomore" | "Freshman")
+    * The member's class in school
 
 ## Learn More
 

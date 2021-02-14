@@ -45,6 +45,7 @@ export default function Navbar() {
               open ? 'flex' : 'hidden'
             } flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row`}
           >
+            <NavLink href="/about-us" text="About Us"></NavLink>
             <NavLink href="/lessons" text="Lessons"></NavLink>
             <NavLink href="/contact" text="Contact Us"></NavLink>
           </nav>
