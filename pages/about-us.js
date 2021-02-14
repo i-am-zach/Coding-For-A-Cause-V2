@@ -1,17 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
 import Layout from '../components/Layout';
-
-{
-  /* <Image
-  src={member.profile_picture}
-  alt={member.full_name}
-  width={500}
-  height={500}
-  layout="responsive"
-  objectFit="cover"
-/>; */
-}
 
 import { getAllMembers } from '../lib/members';
 export default function AboutUs({ members }) {
@@ -28,13 +16,10 @@ export default function AboutUs({ members }) {
               >
                 <div className="flex items-center mb-4">
                   <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-300">
-                    <Image
+                    <img
                       src={member.profile_picture}
                       alt={member.full_name}
-                      width={1000}
-                      height={1000}
-                      layout="responsive"
-                      objectFit="cover"
+                      className="object-cover w-full h-full"
                     />
                   </div>
                   <div className="ml-6">
