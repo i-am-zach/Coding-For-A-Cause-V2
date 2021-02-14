@@ -30,3 +30,7 @@
 .form-field {
   @apply w-full py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none;
 }
+
+.my-container {
+  @apply mx-auto px-8 md:px-10 lg:px-12 max-w-screen-xl;
+}

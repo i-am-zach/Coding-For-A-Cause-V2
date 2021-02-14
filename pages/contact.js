@@ -11,7 +11,7 @@ export default function Contact() {
     <Layout>
       <section className="pt-10">
         <div className="grid md:grid-cols-2">
-          <div className="pl-6 bg-gray-100 py-5 md:pl-10 mx-8 rounded-lg">
+          <div className="px-6 bg-gray-100 py-5 md:pl-10 mx-8 rounded-lg">
             <h1 className="text-3xl font-bold md:text-5xl">Get in touch</h1>
             <p className="pt-2 font-medium text-lg text-gray-600 md:text-xl">
               Fill out the form to start working with us!
@@ -19,16 +19,18 @@ export default function Contact() {
             <div className="flex items-center mt-4 text-gray-600">
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="text-3xl text-gray-400"
+                className="text-gray-400 flex-none"
+                size="2x"
+                style={{ maxWidth: "24px"}}
               />
-              <div className="ml-4 text-md tracking-wide font-semibold">
+              <div className="ml-4 text-md tracking-wide font-semibold flex-1">
                 <p>zachlefko@gmail.com</p>
                 <p>apollosburcham@gmail.com</p>
               </div>
             </div>
           </div>
           <div>
-            <form name="contact" data-netlify="true" data-netlify-repatcha="true" className="grid grid-cols-1 gap-y-4 pr-8 mt-4 md:mt-0">
+            <form name="contact" data-netlify="true" data-netlify-repatcha="true" className="grid grid-cols-1 gap-y-4 px-8 mt-4 md:mt-0 md:ml-0">
               <input type="hidden" name="form-name" value="contact" />
               <FormInput label="Full Name" name="name" inputType="text" />
               <FormInput label="Email" name="email" inputType="email" />

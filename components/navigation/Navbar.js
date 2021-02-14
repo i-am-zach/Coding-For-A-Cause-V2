@@ -10,8 +10,8 @@ export default function Navbar() {
   return (
     <div>
       <div className="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
-        <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-          <div className="p-4 flex flex-row items-center justify-between">
+        <div className="my-container flex flex-col md:items-center md:justify-between md:flex-row">
+          <div className="py-4 flex flex-row items-center justify-between">
             <Link href="/">
               <a className="text-lg font-semibold tracking-wider text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
                 Coding for a Cause
@@ -45,7 +45,7 @@ export default function Navbar() {
               open ? 'flex' : 'hidden'
             } flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row`}
           >
-            <NavLink href="/posts" text="Posts"></NavLink>
+            <NavLink href="/lessons" text="Lessons"></NavLink>
             <NavLink href="/contact" text="Contact Us"></NavLink>
           </nav>
         </div>
