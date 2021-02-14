@@ -18,6 +18,24 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Contributing Guide
+### Adding Posts
+Posts are written in markdown and are found in the `content` directory
+
+[For help on writing Markdown](https://www.markdownguide.org/basic-syntax)
+
+#### Frontmatter for Lessons
+* title: (string)
+    * The article's title displayed in SEO and on the page
+* date: (date)
+    * The date of the lesson
+* tags: ([string])
+    * A list of tags that posts can be filted by
+* youtubeUrl: (string)
+    * The url to the lesson's YouTube video
+* emoji: (string)
+    * A single emoji that represents the theme of the lesson
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
