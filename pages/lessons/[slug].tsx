@@ -18,7 +18,7 @@ const Post = ({ frontmatter, htmlString }) => {
           <h1 className="font-bold text-5xl md:text-6xl mb-6">{ frontmatter.emoji } { frontmatter.title }</h1>
           <ReactPlayer url={frontmatter.youtubeUrl} controls={true} pip={true} style={{ maxWidth: "100%" }} />
         </div>
-        <hr className="mt-8 border border-2 border-gray-300" />
+        <hr className="mt-8 border-2 border-gray-300" />
         <article
           className="prose md:prose-xl w-full pt-8"
           dangerouslySetInnerHTML={{ __html: htmlString }}
