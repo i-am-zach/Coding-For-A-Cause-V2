@@ -10,4 +10,4 @@ Hello! I'm Zach Lefkovitz! I was inspired to found Coding for a Cause after work
 Checkout my personal website at [i-am-zach.github.io](https://i-am-zach.github.io)
 
 <a href="https://github.com/i-am-zach/"><img style="display: inline-block; margin: 0px;" alt="GitHub" src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>
-<a href="https://www.linkedin.com/in/zach-lefkovitz-714a0418b/" target="_blank"><img style="display: inline-block; margin: 0px;" alt="LinkedIn" src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"/></a>
+<a href="https://www.linkedin.com/in/zach-lefkovitz-714a0418b/"><img style="display: inline-block; margin: 0px;" alt="LinkedIn" src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>
