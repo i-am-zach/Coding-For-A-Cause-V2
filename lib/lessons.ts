@@ -4,13 +4,23 @@ import content from './content';
 
 const lessonsDirectory = join(process.cwd(), 'content', 'lessons');
 
-export const getAllLessons = () => {
+export const getAllLessons = (ascending=false) => {
   // Gets all the markdown lessons
   const files = fs.readdirSync(lessonsDirectory);
 
-  return files.map((filename) =>
+  const lessons = files.map((filename) =>
     getLessonBySlug(filename.replace(/\.md$/, '')),
   );
+
+  // Sort lessons by date
+  lessons.sort((a, b) => {
+    const firstDate = new Date(a.frontmatter['date']);
+    const secondDate = new Date(b.frontmatter['date']);
+    const diff = firstDate.getTime() - secondDate.getTime();
+    return ascending ? diff : -diff;
+  });
+
+  return lessons;
 };
 
 export const getLessonBySlug = (slug: string) => {

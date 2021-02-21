@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import Link from 'next/link';
-import LessonsList from "../../components/LessonsList";
+import LessonsList from '../../components/LessonsList';
 
 import { getAllLessons } from '../../lib/lessons';
 
@@ -18,6 +17,7 @@ export default function LessonIndexPage({ lessons }) {
 
 export const getStaticProps = () => {
   const lessons = getAllLessons();
+
   return {
     props: {
       lessons,

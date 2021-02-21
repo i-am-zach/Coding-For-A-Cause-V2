@@ -14,7 +14,7 @@ const Post = ({ frontmatter, htmlString }) => {
       </Head>
       <div className="my-container">
         <div>
-          <h3 className="font-medium text-gray-500 text-lg">{ frontmatter.date }</h3>
+          <h3 className="font-medium text-gray-500 text-lg pb-4">{ frontmatter.date }</h3>
           <h1 className="font-bold text-5xl md:text-6xl mb-6">{ frontmatter.emoji } { frontmatter.title }</h1>
           <ReactPlayer url={frontmatter.youtubeUrl} controls={true} pip={true} style={{ maxWidth: "100%" }} />
         </div>
