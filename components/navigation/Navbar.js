@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+      <div className="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800" style={{ boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.3)"}}>
         <div className="my-container flex flex-col md:items-center md:justify-between md:flex-row">
           <div className="py-4 flex flex-row items-center justify-between">
             <Link href="/">

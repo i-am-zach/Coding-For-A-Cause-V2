@@ -8,7 +8,7 @@ export default function LessonIndexPage({ lessons }) {
   return (
     <Layout>
       <div className="my-container text-center">
-        <h1 className="text-4xl font-bold">Lessons</h1>
+        <h1 className="text-4xl font-bold mt-4">Lessons</h1>
         <LessonsList lessons={lessons} />
       </div>
     </Layout>

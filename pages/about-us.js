@@ -11,7 +11,7 @@ export default function AboutUs({ members }) {
         <meta name="description" contnet="About the Coding for a Cause team"></meta>
       </Head>
       <div className="my-container">
-        <h1 className="text-4xl font-bold text-center pb-8">Our Team</h1>
+        <h1 className="text-4xl font-bold text-center pb-8 mt-4">Our Team</h1>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {members.map((member) => {
             return (

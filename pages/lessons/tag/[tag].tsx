@@ -11,7 +11,7 @@ import {
 const TagPostPage = ({ tag, lessons }) => {
   return (
     <Layout>
-      <div className="my-container text-center">
+      <div className="my-container text-center mt-4">
         <h1 className="text-4xl font-bold">Filtering by tag: {tag}</h1>
         <LessonsList lessons={lessons} />
       </div>
