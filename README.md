@@ -40,7 +40,7 @@ Posts are written in markdown and are found in the `content` directory
 ### Adding Members to `/about-us`
 Members are also stored in markdown so their biography can be written in markdown.
 
-For an example, see `content/members/zach-lefkovitz.md`
+For an example, see `content/members/1_zach-lefkovitz.md`
 #### Frontmatter for Members
 * full_name: (string)
     * The member's full name
@@ -51,6 +51,8 @@ For an example, see `content/members/zach-lefkovitz.md`
     * To learn about Next.js static file serving, [visit this page](https://nextjs.org/docs/basic-features/static-file-serving)
 * class: ("Senior" | "Junior" | "Sophomore" | "Freshman")
     * The member's class in school
+
+<small>Make sure to prefix your file with NUMBER_YOUR_NAME.md to mantain order on the website.</small>
 
 
 ## Todo
