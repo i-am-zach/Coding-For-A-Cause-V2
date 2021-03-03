@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Card from '../components/Card';
 import Layout from '../components/Layout';
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -19,7 +19,9 @@ export default function Home() {
                 for free.
               </h1>
               <button className="btn bg-white text-gray-900 mt-8 lg:text-xl">
-                <Link href="/contact"><a>Contact Us</a></Link>
+                <Link href="/contact">
+                  <a>Contact Us</a>
+                </Link>
               </button>
             </div>
             <div className="mt-12 md:mt-0 flex-1 max-w-xl">
@@ -32,14 +34,19 @@ export default function Home() {
       <section className="pt-12 pb-8 px-6 md:px-0">
         <div className="container mx-auto max-w-screen-xl">
           <div className="text-center">
-            <h1 className="text-5xl font-bold" id="#about-us">Who We Are</h1>
+            <h1 className="text-5xl font-bold" id="#about-us">
+              Who We Are
+            </h1>
             <p className="pt-4 text-xl text-gray-700">
-              Coding for a Cause was started to develop students' skills and
-              teach the marketable technology in the world of Computer Science
-              with a goal of being able to give back to our communities. We
-              start by teaching our members the basics - HTML, CSS, and
-              JavaScript - and move onto more advanced topics like web
-              frameworks, HTTP protocols, and modern web paradigms.
+              Coding for a Cause was founded for two purposes. Our first goal is
+              that we wanted to help develop students' skills in the field of
+              Computer Science by teaching them the most popular and marketable
+              web development technologies. Our second goal is that we wanted to
+              give back to our communities by offering local businesses and
+              not-for-profits our help for free. We start by teaching our
+              members the basics - HTML, CSS, and JavaScript - and move onto
+              more advanced topics like web frameworks, HTTP protocols, and
+              modern web paradigms.
             </p>
           </div>
           {/* CARDS SECTION */}

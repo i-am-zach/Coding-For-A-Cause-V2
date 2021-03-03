@@ -48,6 +48,7 @@ export default function Navbar() {
             <NavLink href="/about-us" text="About Us"></NavLink>
             <NavLink href="/lessons" text="Lessons"></NavLink>
             <NavLink href="/contact" text="Contact Us"></NavLink>
+            <NavLink href="/projects" text="Projects"></NavLink>
           </nav>
         </div>
       </div>
